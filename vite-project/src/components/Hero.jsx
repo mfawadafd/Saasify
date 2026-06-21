@@ -3,9 +3,12 @@ import Button from './Button'
 import Features from '../pages/Features'
 import Pricing from '../pages/Pricing'
 import { ArrowRight, CirclePlay } from 'lucide-react'
+import useScrollReveal from '../Hooks/useScrollReveal'
 
 
 const Hero = () => {
+    const [buttonsRef, showButtons] = useScrollReveal(0.3)
+
     return (
         // Hero section
         <div className='w-full min-h-screen overflow-x-hidden text-center font-medium bg-linear-to-b from-primary-50 to-white dark:from-purple-50 dark:to-purple-50 '>
@@ -27,7 +30,8 @@ const Hero = () => {
                <div className='max-w-2xl mx-auto px-4 mt-4'>
                  <p className='text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl wrap-break-word text-center leading-relaxed'>The all-in-one platform that helps teams ship quality software. Automate workflows, collaborate seamlessly, and scale with confidence.</p>
                </div>
-               <div className='mt-8 flex md:flex items-center justify-center gap-4'>
+               {/* ----------Buttons---------- */}
+               <div ref={buttonsRef} className={`mt-8 flex md:flex items-center justify-center gap-4 transition-all duration-700 ${showButtons ? 'opacity-100 translate-y-0':'opacity-0 translate-y-6'} `}>
                 <Button btn_Text={'Start free trial'} icon={<ArrowRight size={16}/>} className="text-base md:text-lg py-3 px-6" />
                 <Button btn_Text={'Watch demo'} variant='secondary' icon={<CirclePlay size={16} />} iconPosition='left'  className="text-base md:text-lg py-3 px-6" />
                </div>
