@@ -10,51 +10,51 @@ const Navbar = () => {
 
   return (
     // Navbar section
-    <div className='relative flex items-center px-5 py-4 justify-between font-medium border-b-2 border-gray-200'>
+    <div className='flex items-center px-5 py-4 justify-between font-medium border-b-2 border-gray-200 fixed w-full top-0  z-50 bg-white shadow-sm'>
       {/* ----------Desktop Menu ---------- */}
       <Link to={"/"} ><img src={logo} alt="logo" /></Link>
       <ul className='hidden md:flex items-center gap-4 justify-between font-medium text-gray-500'>
         <li>
           <NavLink to={"/Features"}>
-           {({isActive})=>(
-            <>
-            <span>Features</span>
-            {isActive ? <hr className='bg-blue-500 px-1 py-px'/> : ''}
-            </>
-           )}
+            {({ isActive }) => (
+              <>
+                <span>Features</span>
+                {isActive ? <hr className='bg-blue-500 px-1 py-px' /> : ''}
+              </>
+            )}
           </NavLink>
         </li>
 
         <li>
           <NavLink to={"/Pricing"}>
-           {({isActive})=>(
-            <>
-            <span>Pricing</span>
-            {isActive ? <hr className='bg-blue-500 px-1 py-px'/>:''}
-            </>
-           )}
+            {({ isActive }) => (
+              <>
+                <span>Pricing</span>
+                {isActive ? <hr className='bg-blue-500 px-1 py-px' /> : ''}
+              </>
+            )}
           </NavLink>
         </li>
 
         <li>
           <NavLink to={"/Testimonials"}>
-           {({isActive})=>(
-            <>
-            <span>Testimonials</span>
-            {isActive ? <hr className='bg-blue-500 px-1 py-px'/>:''}
-            </>
-           )}
-            </NavLink></li>
+            {({ isActive }) => (
+              <>
+                <span>Testimonials</span>
+                {isActive ? <hr className='bg-blue-500 px-1 py-px' /> : ''}
+              </>
+            )}
+          </NavLink></li>
         <li>
           <NavLink to={'/Resources'}>
-          {({isActive})=>(
-            <>
-            <span>Resources</span>
-            {isActive ? <hr className='bg-blue-500 px-1 py-px'/>:''}
-            </>
-          )}
+            {({ isActive }) => (
+              <>
+                <span>Resources</span>
+                {isActive ? <hr className='bg-blue-500 px-1 py-px' /> : ''}
+              </>
+            )}
           </NavLink>
-          </li>
+        </li>
         <li><NavLink>Contact</NavLink></li>
       </ul>
       <div className='hidden md:block'>

@@ -5,6 +5,7 @@ import Pricing from '../pages/Pricing'
 import { ArrowRight, CirclePlay } from 'lucide-react'
 import useScrollReveal from '../Hooks/useScrollReveal'
 import heroDashboard from '../assets/hero-dashboard.svg'
+import Testimonials from '../pages/Testimonials'
 
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
         // Hero section
         <div className='w-full min-h-screen overflow-x-hidden text-center font-medium bg-linear-to-b from-primary-50 to-white dark:from-purple-50 dark:to-purple-50 '>
 
-            <div className='inline-flex max-w-[90vw] flex-wrap justify-center border rounded-full mt-20 p-2 items-center gap-2 text-sm sm:text-base'>
+            <div className='inline-flex max-w-[90vw] flex-wrap justify-center border rounded-full mt-30 p-2 items-center gap-2 text-sm sm:text-base'>
                 <span className="relative flex size-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
                     <span className="relative inline-flex size-2 rounded-full bg-purple-500"></span>
@@ -25,7 +26,7 @@ const Hero = () => {
 
             </div>
 
-            <div className='text-4xl sm:text-5xl md:text-6xl text-center leading-tight px-4 wrap-break-word '>
+            <div className='text-4xl sm:text-5xl md:text-6xl text-center leading-tight px-4 wrap-break-word mt-5 '>
                 <Title text1={'Build better '} text2={'products,'} />
                 <span className="bg-linear-to-r from-violet-600 to-cyan-500 bg-clip-text text-transparent ">
                     faster than ever
@@ -79,6 +80,8 @@ const Hero = () => {
                 <Features />
 
                 <Pricing />
+
+                <Testimonials/>
 
             </div>
 

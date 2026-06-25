@@ -6,3 +6,7 @@ html, body {
 /* ::-webkit-scrollbar{
   scroll-behavior:calc()
 } */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
