@@ -15,7 +15,7 @@ const Hero = () => {
 
     return (
         // Hero section
-        <div className='w-full min-h-screen overflow-x-hidden text-center font-medium bg-linear-to-b from-primary-50 to-white dark:from-purple-50 dark:to-purple-50 '>
+        <div id='Hero' className='w-full min-h-screen overflow-x-hidden text-center font-medium bg-linear-to-b from-primary-50 to-white dark:from-purple-50 dark:to-purple-50 '>
 
             <div className='inline-flex max-w-[90vw] flex-wrap justify-center border rounded-full mt-30 p-2 items-center gap-2 text-sm sm:text-base'>
                 <span className="relative flex size-2">

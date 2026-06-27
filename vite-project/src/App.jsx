@@ -19,7 +19,6 @@ function ScrollToTop(){
 const App = () => {
   return (
     <>
-
       <Navbar />
       <ScrollToTop/>
       <main className='pt-20'>

@@ -42,7 +42,7 @@ const Features = () => {
  ]
 
   return (
-    <section  className='bg-gray-50 py-20 lg:py-28 dark:bg-gray-100'>
+    <section id='Features'  className='bg-gray-50 py-20 lg:py-28 dark:bg-gray-100'>
       <div className='mx-auto max-w-3xl text-center'>
       <div ref={FeaturesRef} className={`mb-4 inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-700 dark:purple-900/50 dark:text-purple-600 transition-all duration-700 ease-out ${showFeatures ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
         Features
